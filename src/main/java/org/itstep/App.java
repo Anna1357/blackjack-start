@@ -22,6 +22,7 @@ public class App extends Application {
         stage.getIcons().add(new Image("icon.png"));
         stage.setResizable(false);
         stage.show();
+        //git
     }
 
     private String pathToCard(String cardFilename) {
