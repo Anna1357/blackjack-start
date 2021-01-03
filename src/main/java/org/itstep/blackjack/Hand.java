@@ -21,6 +21,7 @@ public class Hand {
     }
 
     public int getValue() {
+
         return cards.stream().filter(c -> !c.isHide()).mapToInt(Card::getValue).sum();
     }
 
