@@ -16,6 +16,9 @@ public class Player {
     public int getCash() {
         return cash;
     }
+    public void addCash(){
+        this.cash+=cash;
+    }
 
     public void setBet(int amount) throws NoMoneyEnough {
         if (cash - amount < 0) {
