@@ -22,7 +22,7 @@ public class Player {
 
     public void setBet(int amount) throws NoMoneyEnough {
         if (cash - amount < 0) {
-            throw new NoMoneyEnough();
+            throw new NoMoneyEnough("недостаточно средств");
         }
         cash -= amount;
     }
